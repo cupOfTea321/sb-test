@@ -1,0 +1,23 @@
+.custom-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #0066cc;
+    border-radius: 3px;
+    color: #0066cc;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    outline: none;               /* убираем стандартный фокус-бокс */
+    transition: border-width 0.1s;
+}
+
+.custom-btn:hover,
+.custom-btn:focus-visible {
+    border-width: 2px;           /* при :hover и при клавиатурной фокусировке */
+}
+
+.custom-btn.disabled {
+    opacity: 0.5;
+    cursor: default;
+    pointer-events: none;
+}

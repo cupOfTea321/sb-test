@@ -1,0 +1,115 @@
+/* ---------- корень ---------- */
+.sel-root {
+    position: relative;
+    font-family: sans-serif;
+}
+
+/* ---------- верхний блок ---------- */
+.sel-head {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    width: 250px;
+    border: 1px solid #f0f0f0;
+    border-radius: 3px;
+    padding: 0 28px 0 8px;
+    background: #fff;
+    cursor: pointer;
+    position: relative;
+}
+
+.sel-root:hover .sel-head,
+.sel-root.open .sel-head,
+.sel-root:focus-visible .sel-head {
+    border-bottom: 2px solid #0066cc;
+}
+
+.sel-head input {
+    flex: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    /*color: #000;*/
+}
+
+/* caret-стрелка */
+.sel-head .caret {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 6px solid #0066cc;
+}
+
+/* крестик для очистки фильтра */
+.sel-head .clear {
+    position: absolute;
+    right: 26px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    line-height: 12px;
+    text-align: center;
+    border-radius: 50%;
+    background: #ccc;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+
+.sel-root:hover .sel-head .clear {
+    opacity: 1;
+    pointer-events: all;
+}
+
+/* ---------- список ---------- */
+.sel-list {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    max-height: 250px;
+    overflow-y: auto;
+    background: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 3px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 20;
+}
+
+.sel-list.down { top: calc(100% + 2px); }
+.sel-list.up   { bottom: calc(100% + 2px); }
+
+/* элементы UL */
+.sel-list li {
+    padding: 6px 8px;
+    cursor: pointer;
+}
+
+.sel-list li.selected   { background: #dedede; }
+.sel-list li.highlight  { background: #e8e8e8; }
+.sel-list li:hover:not(.selected) { background: #f0f0f0; }
+
+.empty {
+    padding: 6px 8px;
+    color: #888;
+    font-style: italic;
+}
+
+/* ---------- состояния ---------- */
+.sel-root.disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+.sel-root.disabled .sel-head { cursor: default; }
