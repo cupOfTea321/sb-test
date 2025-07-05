@@ -5,24 +5,20 @@ import {
 } from "../services/api";
 import "../shared/ui/Button/Button.css";
 import "../app/index.css"
-import {Button} from "@/shared/ui";
 import {SelectAndSend} from "@/features/selectAndSend/ui/SelectAndSend";
 import {Option} from "@/types";
 export default function App() {
-    /* 1. список опций */
     const {
         data: options = [],
         isLoading: loadingOptions,
         isError:  optionsError
     } = useGetOptionsQuery();
 
-    /* 2. отправка выбранной опции */
     const [
         sendSelected,
         { data: serverMsg, error: sendError, isLoading: sending }
     ] = useSendSelectedMutation();
 
-    /** передаём Feature-компоненту callback */
     const handleSend = (opt: Option) => {
 
         sendSelected(opt.value);

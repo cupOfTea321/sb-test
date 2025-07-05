@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca57dea1-a4d6-48b3-8242-89d4bd45a41c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/frontend/src/services/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/frontend/src/services/api.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/frontend/webpack.common.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/frontend/webpack.common.mjs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/eslint-config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/eslint-config/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/turbo.json" beforeDir="false" afterPath="$PROJECT_DIR$/turbo.json" afterDir="false" />
-    </list>
+    <list default="true" id="ca57dea1-a4d6-48b3-8242-89d4bd45a41c" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -135,7 +125,7 @@
       <workItem from="1751617432038" duration="4706000" />
       <workItem from="1751629549521" duration="192000" />
       <workItem from="1751629858408" duration="16450000" />
-      <workItem from="1751663694839" duration="10166000" />
+      <workItem from="1751663694839" duration="10479000" />
     </task>
     <servers />
   </component>

@@ -2,19 +2,15 @@ import path from "path";
 import {fileURLToPath} from "url";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import Dotenv from "dotenv-webpack";
-/* ───── получаем __dirname в ES-модуле ───── */
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-/* ───── конфиг ───── */
 export default {
-    /* ← ключевая строка: все относительные пути читаются от apps/frontend */
     context: __dirname,
 
     entry: "./src/app/index.tsx",
 
     output: {
-        /* делаем абсолютный путь, чтобы не зависеть от cwd */
         path: path.resolve(__dirname, "dist"),
         filename: "[name].[contenthash].js",
         publicPath: "/",
@@ -24,7 +20,7 @@ export default {
     resolve: {
         extensions: [".ts", ".tsx", ".js"],
         alias: {
-            "@": path.resolve(__dirname, "src")   // теперь Webpack понимает @/
+            "@": path.resolve(__dirname, "src")
         }
     },
 
