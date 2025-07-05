@@ -1,7 +1,7 @@
 import path from "path";
 import {fileURLToPath} from "url";
 import HtmlWebpackPlugin from "html-webpack-plugin";
-
+import Dotenv from "dotenv-webpack";
 /* ───── получаем __dirname в ES-модуле ───── */
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -38,6 +38,7 @@ export default {
     plugins: [
         new HtmlWebpackPlugin({
             template: path.resolve(__dirname, "public/index.html")
-        })
+        }),
+        new Dotenv({ systemvars: true })
     ]
 };

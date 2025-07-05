@@ -2,29 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ca57dea1-a4d6-48b3-8242-89d4bd45a41c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.husky/pre-commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sb_test.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/backend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/backend/src/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/backend/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/frontend/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/frontend/src/app/App.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/frontend/src/app/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/frontend/src/types/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/frontend/tsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/frontend/webpack.common.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/frontend/webpack.dev.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/apps/frontend/webpack.prod.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lint-staged.config.mjs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/eslint-config/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/packages/tsconfig/base.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/turbo.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/backend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/backend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/apps/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/frontend/src/services/api.ts" beforeDir="false" afterPath="$PROJECT_DIR$/apps/frontend/src/services/api.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/frontend/webpack.common.mjs" beforeDir="false" afterPath="$PROJECT_DIR$/apps/frontend/webpack.common.mjs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/eslint-config/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/eslint-config/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/turbo.json" beforeDir="false" afterPath="$PROJECT_DIR$/turbo.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,9 +63,19 @@
       <recent name="C:\Users\kobze\OneDrive\Документы\GitHub\sb_test\apps\frontend\src\widjets\CustomButton" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.dev (1)">
+  <component name="RunManager" selected="npm.dev (2)">
     <configuration name="dev (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/apps/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev (2)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
         <script value="dev" />
@@ -98,31 +94,21 @@
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev:backend" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/package.json" />
+    <configuration name="lint (1)" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/apps/frontend/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev:backend" />
+        <script value="lint" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="dev:frontend" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+    <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev:frontend" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <configuration name="start" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/apps/backend/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="start" />
+        <script value="lint" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -130,11 +116,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev (2)" />
+        <item itemvalue="npm.lint" />
+        <item itemvalue="npm.lint (1)" />
         <item itemvalue="npm.dev (1)" />
         <item itemvalue="npm.dev" />
-        <item itemvalue="npm.start" />
-        <item itemvalue="npm.dev:frontend" />
-        <item itemvalue="npm.dev:backend" />
       </list>
     </recent_temporary>
   </component>
@@ -149,7 +135,7 @@
       <workItem from="1751617432038" duration="4706000" />
       <workItem from="1751629549521" duration="192000" />
       <workItem from="1751629858408" duration="16450000" />
-      <workItem from="1751663694839" duration="4712000" />
+      <workItem from="1751663694839" duration="10166000" />
     </task>
     <servers />
   </component>

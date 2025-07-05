@@ -1,11 +1,14 @@
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 import {Option} from "@/types";
+export const API_BASE_URL = import.meta.env?.VITE_API_URL ?? process.env.VITE_API_URL!;
 
 export interface ServerMessage { message: string; }
 
 export const api = createApi({
     reducerPath: "api",
-    baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:4000/" }),
+    baseQuery: fetchBaseQuery({
+            baseUrl: API_BASE_URL
+        }),
     tagTypes: ["Options"],
     endpoints: (builder) => ({
         getOptions: builder.query<Option[], void>({
