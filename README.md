@@ -1,4 +1,4 @@
-# Сashа Test Project
+# Sb Test Project
 
 > **Monorepo** (npm workspaces) — Frontend (React + Redux Toolkit) & Backend (Express, TypeScript). 100 % TypeScript.
 >
