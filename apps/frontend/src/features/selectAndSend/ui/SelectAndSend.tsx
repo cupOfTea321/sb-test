@@ -21,7 +21,7 @@ export const SelectAndSend: React.FC<SelectAndSendProps> = ({
     const noOptions = !loading && list.length === 0;
 
     return (
-        <div>
+        <div style={{display: 'flex', gap: '10px'}}>
             {loading && <p>Загружаем список…</p>}
             {error && <p style={{ color: "red" }}>Ошибка загрузки списка</p>}
             {noOptions && <p>Нет доступных опций</p>}
